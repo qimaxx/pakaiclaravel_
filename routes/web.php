@@ -10,3 +10,7 @@
 
     // Route untuk news 
     Route::get('news', [NewsController::class, "index"]);
+
+    Route::get('/tlw', function () {
+        return view('tailwind');
+    });
